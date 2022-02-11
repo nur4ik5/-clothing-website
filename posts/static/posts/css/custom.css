@@ -1,34 +1,64 @@
-/** {box-sizing: border-box;}
-form {
-  position: relative;
-  width: 300px;
-  margin: 0 auto;
+p.otstup{
+    margin-top: 1%
 }
-input, button {
+
+*{box-sizing: border-box;}
+form.box {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+} 
+input.box {
+  width: 100%;
+  height: 32px;
+  background: #F0F0F0;
+  padding-left: 15px;
   border: none;
   outline: none;
   border-radius: 3px;
-}
-input {
-  width: 100%;
-  height: 42px;
-  background: #F9F0DA;
-  padding-left: 15px;
-}
-button {
-  height: 26px;
-  width: 26px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: #F15B42;
-  cursor: pointer;
-}
-button:before {
-  content: "\f105";
-  font-family: FontAwesome;
-  color: #F9F0DA;
-  font-size: 20px;
-  font-weight: bold;
-}*/
 
+}
+div.dline {
+    line-height: 1.5;
+   }
+   /*{
+    line-height: 0.9em;
+   }*/
+
+div.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+img.scale {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+.scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
+
+div.effect {
+    color: #000000; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+a:visited {
+    color: #000000; /* Цвет посещённой ссылки */
+} 
+h5:hover {
+    color: #ff4f00 ; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+
+.container-fluid  {
+    position: relative;
+    width: 50%;
+}
+button.btn {
+padding-left : 32px;
+padding-top : 10px;
+padding-bottom : 10px;
+background-repeat : no-repeat;
+}
+button.btn:hover {
+    background-color: orange;
+}
