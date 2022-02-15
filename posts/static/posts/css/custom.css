@@ -1,4 +1,4 @@
-p.otstup{
+div,p.otstup{
     margin-top: 1%
 }
 
@@ -16,6 +16,7 @@ input.box {
   border: none;
   outline: none;
   border-radius: 3px;
+  left: 40px;
 
 }
 div.dline {
@@ -26,53 +27,156 @@ div.dline {
    }*/
 
 div.scale {
-    display: inline-block; /* Строчно-блочный элемент */
-    overflow: hidden; /* Скрываем всё за контуром */
+    display: inline-block; 
+    overflow: hidden; 
    }
 img.scale {
-    transition: 1s; /* Время эффекта */
-    display: block; /* Убираем небольшой отступ снизу */
+    transition: 1s; 
+    display: block; 
    }
 .scale img:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */
+    transform: scale(1.2); 
    }
 
 div.effect {
-    color: #000000; /* Цвет обычной ссылки */ 
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: orange; 
+    text-decoration: none; 
 }
 a:visited {
-    color: #000000; /* Цвет посещённой ссылки */
+    color: orange; 
 } 
 h5:hover {
-    color: #ff4f00 ; /* Цвет ссылки при наведении на нее курсора мыши */  
-    text-decoration: underline; /* Добавляем подчеркивание */
+    color: #ff4f00 ;  
+    text-decoration: underline; 
 }
+a.orange {
+    color: black;  
+   }
+   a.orange {
+    color: black;  
+    text-decoration: none; 
+   }
+   a.orange:visited { 
+    color: black; 
+   }
+   a.orange:hover {
+    color: orange;  
+   }
 
-.container-fluid  {
+/*------------------------------------*/
+
+.btn {
     position: relative;
-    width: 50%;
+    width: 200px;
+    top: 150px;
+    left: 50%;
+    font-weight: 600;
+    transform: translate( -570%, 0 );
+    font-size:0;
+    margin:-100px;
+    color: whitesmoke;
+
 }
-button.btn {
-padding-left : 32px;
-padding-top : 10px;
-padding-bottom : 10px;
-background-repeat : no-repeat;
-}
-button.btn:hover {
-    background-color: orange;
+button.btn-outline-warning {
+    background: 00F0F8FF ;
+    color:  white;
+    border-color: white;
 }
 
-img.text {
+/*#---------------------------------*/
+
+p,h6,img.otstup{
+    margin-left: 23px;
+}
+
+h1.center{
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+del{
+    color: orange;
+}
+button.btn-outline-dark{
+    margin-left: 250px;
+    margin-bottom: 10%;
+}
+
+img.img-banner{
+    margin-top: 3%;
+    margin-left: 450px;
+    
+}
+img.mini-otstup{
+    margin-top: 60px;
+}
+h4.text-top{
+    margin-top: 1%;
+    margin-right: 650px;
+}
+h4.text-top2{
+    margin-left: 50px;
+}
+h4.text-top3{
+    margin-left: 700px;
+}
+h3.otstup{
+    margin-top: 4%;
+}
+
+
+button.miti-btn:hover {
+    background-color: #F7941E;
+    color: #fff;
+
+    }
+
+img.image {
     position: relative;
-    width: 100%; 
+    width: 95%; 
 }
 
-h3, h1.text {
-    text-transform: uppercase;
-    position: absolute;
-    top: 500px;
-    left: 50px;
+h1.top-text {
+    position: relative;
+    top: -150px;
+    left: 90px;
     width: 100%;
     color: white;
 }
+a.top-text{
+    position: relative;
+    top: -160px;
+    left: 90px;
+    width: 100%;
+    color: white;
+}
+a.top-text {
+    color: white; /* Цвет ссылки */ 
+   }
+   a.top-text {
+    color: white; /* Цвет ссылок */ 
+   }
+   a.top-text:visited { 
+    color: white; /* Цвет посещенных ссылок */ 
+   }
+   a.top-text:hover {
+    color: white; /* Цвет ссылок при наведении на них курсора мыши */ 
+}
+
+p,h3.otstup{
+    margin-top: 4%;
+    height: 100px;
+    margin-left:30px;
+}
+
+table {
+    width: 300px; 
+    margin: auto;
+
+   }
+tr{
+    text-align: center;
+    height: 100px;
+}
+
+}
+
