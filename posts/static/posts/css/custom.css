@@ -86,7 +86,7 @@ button.btn-outline-warning {
 /*#---------------------------------*/
 
 p,h6,img.otstup{
-    margin-left: 23px;
+    margin-left: 25px;
 }
 
 h1.center{
@@ -162,21 +162,39 @@ a.top-text {
     color: white; /* Цвет ссылок при наведении на них курсора мыши */ 
 }
 
-p,h3.otstup{
+h3.indent{
     margin-top: 4%;
     height: 100px;
-    margin-left:30px;
+    margin-left:60px;
+}
+p.indent{
+    margin-left:60px;
 }
 
-table {
-    width: 300px; 
-    margin: auto;
-
-   }
-tr{
-    text-align: center;
-    height: 100px;
-}
+table.table1{
+    margin-top: -8%; 
+    position: inherit;
+    margin-right: 810px;
 
 }
+table.table2{
+    margin-top: -8%; 
+    position: inherit;
+    margin-right: 210px;
 
+}
+table.table3{
+    margin-top: -8%; 
+    position: inherit;
+    margin-left: 1110px;
+
+}
+.mini-text{
+    font-size: 15px;
+}
+img.img-logo{
+    margin-top: -17%; 
+    position: inherit;
+    width: 100px;
+    margin-left: 1780px;
+}
