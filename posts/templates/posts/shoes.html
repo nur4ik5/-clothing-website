@@ -1,0 +1,212 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <!-- Сылки на одежды и обувь -->
+    <p class="otstup"></p>
+    <div class="row row-cols-auto" style="margin-top: -1%; margin-left: 46px;">
+        <div class="col"><a class="orange" href="#" style="margin: 2px;">Women</a></div>
+        <a class="orange" href="#" style="margin: 2px;">Men</a>
+        <a class="orange" href="#" style="margin: 2px;">Unisex</a>
+        <a class="orange" href="#" style="margin: 2px;">Kids</a>
+        <a class="orange" href="#" style="margin: 2px;">Sneakers</a>
+        <a class="orange" href="#" style="margin: 2px;">Boots</a>
+        <a class="orange" href="#" style="margin: 2px;">Sports shoes</a>
+        <a class="orange" href="#" style="margin: 2px;">Outdoor shoes</a>
+        <a class="orange" href="#" style="margin: 2px;">Accessories for shoes</a> 
+        <a class="orange" href="#" style="margin: 2px;">All shoes</a>      
+        <a class="orange" href="#" style="margin: 2px;">Pages</a> 
+        <a class="orange" href="#" style="margin: 2px;">Homes</a>         
+    </div>
+	<p class="otstup"></p>
+    <div> 
+        <img src="{% static 'posts/image/slider-shoes-layer1-1.jpg' %}" alt="" height="988px">
+        <img src="{% static 'posts/image/slider-shoes-layer2-1.jpg' %}" alt="" height="988px">
+       <!--  <h1>Shoes for her</h1>
+        <h1>Shoes for him</h1>
+ -->
+    </div>
+    <div>
+        <img src="{% static 'posts/image/red-fon.png' %}" alt="" width="1900px" height="400px" style="margin-top: -0.9%;">
+        <img src="{% static 'posts/image/christmas-1.jpg' %}" alt="" style="margin-top: -330px;">
+        <img src="{% static 'posts/image/christmas-2.jpg' %}" alt="" style="margin-top: -530px; margin-left: 1668px;">
+
+
+        <center class = "elementor-text">
+
+            <h1>Christmas Sales -50%</h1>
+            <p>Use code “shoesshoesshoes” in cart to check the discount.</p>
+            <button class="elementor-button-text">Sneakers</button>
+            <button class="elementor-button-text">Boots</button>
+            <button class="elementor-button-text">Sports shoes</button>
+            <button class="elementor-button-text">Outdoor shoes</button>
+
+        </center>
+    </div>
+    <div style="margin-top: 1%;">
+        <center>
+            <img src="{% static 'posts/image/footwear-sneakers.png' %}" alt="" style="margin: 115px;">
+            <img src="{% static 'posts/image/footwear-boots.png' %}" alt="" style="margin: 115px;">
+            <img src="{% static 'posts/image/footwear-flip-flops.png' %}" alt="" style="margin: 115px;">
+            <img src="{% static 'posts/image/footwear-heels.png' %}" alt="" style="margin: 115px;">
+            <img src="{% static 'posts/image/footwear-sport.png' %}" alt="" style="margin: 115px;">
+            <img src="{% static 'posts/image/footwear-boots-female.png' %}" alt="" style="margin: 115px;">
+        </center>
+            <button class="elementor-button-obuv">12345</button>
+            <button class="elementor-button-obuv">34567</button>
+            <button class="elementor-button-obuv">67890</button>
+            <button class="elementor-button-obuv">89078</button>
+            <button class="elementor-button-obuv">89087</button>
+            <button class="elementor-button-obuv">67565</button>
+    </div>
+</main>
+<body>
+    <center><h1>New Arrivals</h1></center>
+    <div class="owl-carousel owl-theme" style="margin-top: -3%;">
+        <div class="item">
+            <img src="{% static 'posts/image/010-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Barberry</a>
+            <h6 class="otstup">Women's boots knee high</h6>
+            <h6>$99.08 <del>$125.80</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/011-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Chow Tai Fook</a>
+            <h6 class="otstup">Linghtweigth woterproof shoes</h6>
+            <h6>$60.45</h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/018-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Adidas</a>
+            <h6 class="otstup">Slip resistant work sneaker</h6>
+            <h6>$60.23 <del>$89.98</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/013-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Zoodel</a>
+            <h6 class="otstup">Sliver earrings for women</h6>
+            <h6>$199.00 <del>250.00</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/009-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Adidas</a>
+            <h6 class="otstup">Go walk joy walking shoes</h6>
+            <h6>$52.08 <del>$64.98</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/034-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Miva Fashion</a>
+            <h6 class="otstup">Woman's pati boots ankle</h6>
+            <h6>$36.09 <del>59.68</del></h6>
+        </div>    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
+    <center><button type="button" class="btn btn-outline-dark" >Show all new arrivals</button></center>
+    <!-- Оповещение -->
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+
+    <!-- Вторая карусель -->
+    <center><h1>Bestsellers</h1></center>
+    <div class="owl-carousel owl-theme" style="margin-top: -3%;">
+        <div class="item">
+            <img src="{% static 'posts/image/010-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Barberry</a>
+            <h6 class="otstup">Women's boots knee high</h6>
+            <h6>$99.08 <del>$125.80</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/011-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Chow Tai Fook</a>
+            <h6 class="otstup">Linghtweigth woterproof shoes</h6>
+            <h6>$60.45</h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/018-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Adidas</a>
+            <h6 class="otstup">Slip resistant work sneaker</h6>
+            <h6>$60.23 <del>$89.98</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/013-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Zoodel</a>
+            <h6 class="otstup">Sliver earrings for women</h6>
+            <h6>$199.00 <del>250.00</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/033-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Chow Tai Fook</a>
+            <h6 class="otstup">Casual comfort cross trainer</h6>
+            <h6>$106.58 <del>$169.32</del></h6>
+        </div>
+        <div class="item">
+            <img src="{% static 'posts/image/034-600x798.jpg' %}" class="otstup" alt="">
+            <a href="" class="link">Miva Fashion</a>
+            <h6 class="otstup">Woman's pati boots ankle</h6>
+            <h6>$36.09 <del>59.68</del></h6>
+        </div>    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
+    <center><button type="button" class="btn btn-outline-dark" >Show all new arrivals</button></center>
+
+    <hr style="margin-bottom: 5%;">
+    <center>
+        <img src="{% static 'posts/image/shoes-banner-3.jpg' %}" alt="">
+        <img src="{% static 'posts/image/shoes-banner-4.jpg' %}" alt="">
+        <img src="{% static 'posts/image/shoes-banner-5.jpg' %}" alt="">
+        <h3>Many styles in one look</h3>
+        <h3>Up to -50%</h3>
+        <h3>Sporty elegance</h3>
+        
+    </center>
+
+</body>
+
+
+
+{% endblock content%}
