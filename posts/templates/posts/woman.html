@@ -19,6 +19,7 @@
         <a class="orange" href="#" style="margin: 2px;">All for women</a>         
     </div>
 	<p class="otstup"></p>
+	
 	<div>	
 		<img src="{% static 'posts/image/womans-slider.jpg'%}" height="800px" width="1900px" alt="">
 		<h1 class="text-5"> Summer sale <br> up to -50%</h1>
@@ -27,7 +28,12 @@
 		<button type="button" class="btn-1">Skirts</button>	
 		<button type="button" class="btn-1">Swimsuits</button>	
 	</div>
-	
+	<div>
+		<div class="scale"><img src="{% static 'posts/image/women-banner-1.jpg'%}" alt="" class="scale" height="749"></div>
+		<div class="scale"><img src="{% static 'posts/image/women-banner-2.jpg'%}" alt="" class="scale" height="749"></div>
+		<div class="scale"><img src="{% static 'posts/image/women-banner-3.jpg'%}" alt="" class="scale" height="749"></div>
+		
+	</div>
 	<div style="margin-top: 3%;">
 		<img src="{% static 'posts/image/dresses.jpg'%}" alt="" height="524px">
 		<img src="{% static 'posts/image/shoes-1.jpg'%}" alt="" height="524px">
@@ -99,13 +105,12 @@
             items:3
         },
         1000:{
-            items:5
+            items:6
         }
     }
 })
     </script>
     <center><button type="button" class="btn btn-outline-dark" >Show all new arrivals</button></center>
-</body>
 
 <hr style="margin-bottom: 4%;">
 
@@ -120,19 +125,20 @@
 
 <hr style="margin-top: 4%;">
 
-<center>	
-	<h3>Join our newsletter and get $20 for your first order</h3>
-	<div>
-		<input type="text" placeholder="Your e-mail address" style="width: 460px;">
-		<button class="btn-orange" style="margin-bottom: 4%;">Subscribe</button>
-	</div>
-</center>
+<center><h3 class="otstup">Join our newsletter and get $20 for your first order</h3></center>
+<div class="mx-auto" style="width: 500px;"> 
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Your e-mail address" style="width: 300px; " >
+        <button type="button" class="miti-btn">Subscribe</button>
+    </div>
+</div>
 
 <center>
 	<img src="{% static 'posts/image/banner-fullwidth-2.jpg' %}" alt="">
 	<h1 class="center-text">Health & Beauty</h1>
 	<a href="" style="margin-left: -1690px; color: black;">Discover more</a>
 </center>
+</body>
 
 <!-- иконки соц. сетей -->
 <center>

@@ -27,6 +27,7 @@ input.box {
     top: 5px;
     width: 32px;
     height: 32px;
+
 }
 
 div.dline {
@@ -37,11 +38,12 @@ div.scale {
     display: inline-block; 
     overflow: hidden; 
    }
+
 img.scale {
     transition: 1s; 
     display: block; 
    }
-.scale img:hover {
+img.scale:hover {
     transform: scale(1.2); 
    }
 
@@ -69,6 +71,27 @@ a.orange {
 .orange:hover {
     color: #ff4f00;  
    }
+
+.text-element{
+    margin-top: -1%;
+    position: relative;
+    margin-right: 1000px;
+    font-size: 380%;
+    color: white;
+}
+.mini-text-element{
+    margin-top: -2%;
+    margin-right: 700px;
+    font-size: 140%;
+    color: white;
+}
+
+button.btn-dark-model{
+    margin-top: -2%; 
+    position: relative;
+    margin-right: 400px;
+}
+
 
 /*------------------------------------*/
 
@@ -150,14 +173,6 @@ button.btn-outline-dark{
     margin-bottom: 5%;
 }
 
-img.img-banner{
-    margin-top: 3%;
-    margin-left: 450px;
-    
-}
-img.mini-otstup{
-    margin-top: 58px;
-}
 h4.text-top{
     margin-top: 1%;
     position: inherit;
@@ -222,7 +237,7 @@ a.top-text {
 
 a.link{
     position: inherit;
-    margin-left: 7%;
+    margin-left: 9%;
     color: #808080;
     text-decoration: none;
 }
@@ -286,7 +301,7 @@ a.nav-link:hover{
 a.nav-link2{
     text-decoration: none;
     margin-top: 20%; 
-    position: inherit;
+    position: relative;
     margin-left: 1800px;
     color: black;
 }
@@ -303,6 +318,14 @@ a.nav-link2:hover{
 /*---------------------------------------------------------*/
 
 /*Women*/
+
+img.scle_img {
+    transition: 1s; 
+    display: block; 
+   }
+.scale_img img:hover {
+    transform: scale(1.2); 
+   }
 
 .btn-outline1{
     position: relative;
@@ -363,14 +386,7 @@ a.nav-link2:hover{
     background-color: black;
     color: white;
 }
-button.btn-orange{
-    background: #F7941E;
-    color: white;
-}
-button.btn-orange:hover{
-    background: white;
-    color: #F7941E;
-}
+
 h1.center-text{
     margin-top: -7%; 
     position: inherit;
@@ -392,9 +408,10 @@ table.table3-3{
     margin-left: 570px;
 }
 h1.text-5{
-    margin-top: -12%; 
+    margin-top: -17%; 
     position: inherit;
     margin-left: 70px;
+    font-size: 500%;
     color: white;
 }
 
@@ -402,9 +419,11 @@ button.btn-1{
     margin-top: -8%; 
     position: inherit;
     margin-left: 70px;
+    width: 150px;
     background: white;
     color: black;
     border-color: white;
+    margin: 5px;
 }
 button.btn-1:hover{
     background: black;
@@ -439,10 +458,122 @@ button.elementor-button-obuv{
     border-color: black;
     width: 80px;
 }
+
+h1.element-font{
+    margin-top: -20%;
+    font-size: 70px;
+    margin-left: 2%;
+    line-height: 1.1em;
+    color: white;
+}
+
 button.elementor-button-obuv:hover{
     background: black;
     color: white;
 }
 
+h4.shoes-text-top{
+    margin-top: 1%;
+    margin-right: 35%;
+}
+h4.shoes-text-top2{
+    margin-top: -1.8%;
+}
+h4.shoes-text-top3{
+    margin-top: -1.9%;
+    margin-left: 35%;
+}
 
+a.shoes-top{
+    color: black;
+    margin: 7%;
+}
+
+a.shoes-top:hover{  
+    color: black;
+}
+
+h1.elementor-title{
+    margin-top: -8%;
+    margin-left: 80px;
+    color: #FFF;
+    font-size: 50px;
+    line-height: 1.1em;
+}
+a.elementor-button-title{
+    color: white;
+    margin-left: 80px;
+
+}
+a.elementor-button-title:hover{
+    color: white;
+}
+
+
+/*---------------------------------*/
+
+/*Jackets & Coats*/
+
+
+.search-icon-element{
+    z-index: 0;
+    position: relative;
+    right: 30px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+img.dropdown-element{
+    margin-top: -20%;
+    position: relative;
+    margin-left: 400px;
+}
+
+img.dropdown-element2{
+    margin-top: -361px;
+    position: relative;
+    margin-left: 1010px;
+}
+
+h4.dropdown-element-text{
+    margin-top: -6%;
+    position: relative;
+    margin-left: 450px;
+}
+a.dropdown-link{
+    position: relative; 
+    margin-left: 450px;
+}
+h4.dropdown-element-text-2{
+    margin-top: -6%;
+    position: relative;
+    margin-left: 1050px;
+}
+
+a.dropdown-link-2{
+    position: relative; 
+    margin-left: 1050px;
+}
+
+div.img-element-1{
+    margin-top: -300px;
+    position: relative;
+    margin-left: 300px;
+
+}
+
+div.img-element-2{
+    margin-top: -354px;
+    position: relative;
+    margin-left: 530px;
+
+}
+
+div.img-element-3{
+    margin-top: -354px;
+    position: relative;
+    margin-left: 760px;
+
+}
 

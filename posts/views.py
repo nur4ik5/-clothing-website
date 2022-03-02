@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Post
+from .models import Post, Product, Category
 
 
 def index(request):
@@ -10,3 +10,15 @@ def woman(request):
 
 def shoes(request):
 	return render (request, "posts/shoes.html")
+
+	
+
+def jackets_men(request):
+	products = Product.objects.all()
+	categories = Category.objects.all()
+	context = {
+		'products': products,
+		'categories': categories
+	}
+	return render (request, "posts/jackets-coats-men.html", context)
+

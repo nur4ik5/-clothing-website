@@ -23,8 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name = "index"),
     path('woman/', views.woman, name = "woman"),
-    path('shoes/', views.shoes, name = "shoes")
+    path('shoes/', views.shoes, name = "shoes"),
+    path('jackets-men/', views.jackets_men, name='jackets-men'),
     
 
-]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
