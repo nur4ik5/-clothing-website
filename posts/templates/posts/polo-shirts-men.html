@@ -4,11 +4,11 @@
 <div class="container-fluid  ">
     <nav style="--bs-breadcrumb-divider:" aria-label="breadcrumb">
       	<ol class="breadcrumb">
-        	<li class="breadcrumb-item"><a href="#">sdfghjk</a></li>
-        	<li class="breadcrumb-item active" aria-current="page">Jackets & Coats</li>
+        	<li class="breadcrumb-item"><a href="#">Home</a></li>
+        	<li class="breadcrumb-item active" aria-current="page">Polo shirts</li>
       	</ol>
     </nav>
-    <h1>Jackets & Coats</h1>
+    <h1>Polo shirts</h1>
     	{% for p in products %}
         <img src=" {{p.image.url}} " class="otstup" height="350px" alt="">
         <a href="" class="link">{{p.brend}}</a>
@@ -37,7 +37,7 @@
     </div>
 </center>
 <div class="otstup"> 
-    <center>  
+    <center>
         <a class="orange" href="{% url 'jackets-men' %}" style="margin: 10px;">Jackets & Coats</a>
         <a class="orange" href="{% url 'loungewear-men' %}" style="margin: 10px;">Loungewear</a>
         <a class="orange" href="{% url 'polo-shirts-men' %}" style="margin: 10px;">Polo shirts</a>
@@ -48,7 +48,7 @@
         <a class="orange" href="#" style="margin: 10px;">T-shirts</a>
         <a class="orange" href="#" style="margin: 10px;">Trousers</a>
         <a class="orange" href="#" style="margin: 10px;">Underwear</a>
-        <a class="orange" href="#" style="margin: 10px; ">All for men</a>
+        <a class="orange" href="#" style="margin: 10px;">All for men</a> 
     </center>
 </div>
 
@@ -135,12 +135,5 @@
     <img src="{% static 'posts/image/payment.png'%}" alt="" style="margin-bottom: 50px;">
 </center>
 
+
 {% endblock content%}
-
-
-
-
-
-
-
-

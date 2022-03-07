@@ -11,9 +11,9 @@ def woman(request):
 def shoes(request):
 	return render (request, "posts/shoes.html")
 
-	
 
-def jackets_men(request):
+
+def products_men(request):
 	products = Product.objects.all()
 	categories = Category.objects.all()
 	context = {
@@ -21,4 +21,12 @@ def jackets_men(request):
 		'categories': categories
 	}
 	return render (request, "posts/jackets-coats-men.html", context)
+
+
+
+
+
+
+
+
 

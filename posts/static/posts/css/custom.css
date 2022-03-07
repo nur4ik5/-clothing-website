@@ -38,12 +38,11 @@ div.scale {
     display: inline-block; 
     overflow: hidden; 
    }
-
 img.scale {
     transition: 1s; 
     display: block; 
    }
-img.scale:hover {
+.scale img:hover {
     transform: scale(1.2); 
    }
 
@@ -99,7 +98,7 @@ button.btn-outline-orange {
     position: relative;
     width: 200px;
     top: 150px;
-    left: 50%;
+    left: 43%;
     transform: translate( -570%, 0 );
     margin:-100px;
     background: transparent;
@@ -114,7 +113,7 @@ button.btn-outline-orange2 {
     position: relative;
     width: 200px;
     top: 150px;
-    left: 50%;
+    left: 44%;
     transform: translate( -570%, 0 );
     margin:-100px;
     background: transparent;
@@ -129,7 +128,7 @@ button.btn-outline-orange3 {
     position: relative;
     width: 200px;
     top: 150px;
-    left: 50%;
+    left: 44%;
     transform: translate( -570%, 0 );
     margin:-100px;
     background: transparent;
@@ -144,7 +143,7 @@ button.btn-outline-orange4 {
     position: relative;
     width: 200px;
     top: 150px;
-    left: 50%;
+    left: 44%;
     transform: translate( -570%, 0 );
     margin:-100px;
     background: transparent;
@@ -155,7 +154,30 @@ button.btn-outline-orange4:hover{
     background-color: #F7941E;
     color: white;
 }
+
+button.btn-outline-orange5 {
+    position: relative;
+    width: 200px;
+    top: -92px;
+    left: 91%;
+    margin:-100px;
+    background: transparent;
+    color: white; 
+    border-color: white;  
+}
+button.btn-outline-orange5:hover{
+    background-color: #F7941E;
+    color: white;
+}
 /*#---------------------------------*/
+
+div.alert{
+    margin-top: -0.5%;
+    background-color: #F7941E;
+    background: #F7941E;
+    height: 40px;
+}
+
 
 p,h6,img.otstup{
     margin-left: 25px;
@@ -237,7 +259,7 @@ a.top-text {
 
 a.link{
     position: inherit;
-    margin-left: 9%;
+    margin-left: 8%;
     color: #808080;
     text-decoration: none;
 }
@@ -259,21 +281,21 @@ p.indent{
 }
 
 table.table1{
-    margin-top: -8%; 
+    margin-top: -7%; 
     position: inherit;
     margin-right: 810px;
 
 }
 table.table2{
-    margin-top: -8%; 
+    margin-top: -7.3%; 
     position: inherit;
     margin-right: 220px;
 
 }
 table.table3{
-    margin-top: -8%; 
+    margin-top: -7.3%; 
     position: inherit;
-    margin-left: 1110px;
+    margin-left: 1310px;
 
 }
 .mini-text{
@@ -284,13 +306,13 @@ img.img-logo{
     margin-top: -17%; 
     position: inherit;
     width: 100px;
-    margin-left: 1750px;
+    margin-left: 1950px;
 }
 
 a.nav-link{
     margin-top: -7%; 
     position: inherit;
-    margin-left: 1680px;
+    margin-left: 1880px;
     color: black;
 }
 
@@ -300,9 +322,9 @@ a.nav-link:hover{
 
 a.nav-link2{
     text-decoration: none;
-    margin-top: 20%; 
+    margin-top: -1.9%; 
     position: relative;
-    margin-left: 1800px;
+    margin-left: 2000px;
     color: black;
 }
 
@@ -319,20 +341,11 @@ a.nav-link2:hover{
 
 /*Women*/
 
-img.scle_img {
-    transition: 1s; 
-    display: block; 
-   }
-.scale_img img:hover {
-    transform: scale(1.2); 
-   }
-
 .btn-outline1{
     position: relative;
     width: 100px;
     top: -80px;
-    left: 68%;
-    transform: translate( -1000%, 0 );
+    left: 14%;
     margin:-100px;
     background: transparent;
     color: black;       
@@ -345,8 +358,7 @@ img.scle_img {
     position: relative;
     width: 100px;
     top: -80px;
-    left: 98%;
-    transform: translate( -1000%, 0 );
+    left: 45%;
     margin:-100px; 
     background: transparent;
     color: black;     
@@ -361,8 +373,7 @@ img.scle_img {
     position: relative;
     width: 100px;
     top: -80px;
-    left: 128%;
-    transform: translate( -1000%, 0 );
+    left: 75%;
     margin:-100px;
     background: transparent;
     color: black;     
@@ -376,8 +387,7 @@ img.scle_img {
     position: relative;
     width: 100px;
     top: -80px;
-    left: 158%;
-    transform: translate( -1000%, 0 );
+    left: 104%;
     margin:-100px;
     background: transparent;
     color: black;  
@@ -388,9 +398,9 @@ img.scle_img {
 }
 
 h1.center-text{
-    margin-top: -7%; 
+    margin-top: -8%; 
     position: inherit;
-    margin-right: 1500px;
+    margin-right: 1600px;
     
 }
 

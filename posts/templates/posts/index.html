@@ -1,13 +1,13 @@
 {% extends "posts/base.html" %}
 {% load static %}
 {% block content %}
-<main> 
+<main>
     <!-- Сылки на одежды и обувь -->
     <p class="otstup"></p>
     <div class="row row-cols-auto" style="margin-left: 46px;">
-        <div class="col"><a class="orange" href="{% url 'jackets-men' %}" style="margin: 2px;">Jackets & Coats</a></div>
-        <a class="orange" href="#" style="margin: 2px;">Loungewear</a>
-        <a class="orange" href="#" style="margin: 2px;">Polo shirts</a>
+        <div class="col" style="margin-top: 0.1%"><a class="orange" href="{% url 'jackets-men' %}" style="margin: 2px;">Jackets & Coats</a></div>
+        <a class="orange" href="{% url 'loungewear-men' %}" style="margin: 2px;">Loungewear</a>
+        <a class="orange" href="{% url 'polo-shirts-men' %}" style="margin: 2px;">Polo shirts</a>
         <a class="orange" href="#" style="margin: 2px;">Shirts</a>
         <a class="orange" href="#" style="margin: 2px;">Shorts</a>
         <a class="orange" href="#" style="margin: 2px;">Suits</a>
@@ -15,8 +15,57 @@
         <a class="orange" href="#" style="margin: 2px;">T-shirts</a>
         <a class="orange" href="#" style="margin: 2px;">Trousers</a>
         <a class="orange" href="#" style="margin: 2px;">Underwear</a> 
-        <a class="orange" href="#" style="margin: 2px;">All for men</a>     
+        <div class="btn-group">
+            <a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2%;"> 
+                All for men
+            </a> 
+            <ul class="dropdown-menu">
+                <h6>Men</h6>
+                <li><a href="" class="orange" style="height: 10px;">Accessories</a></li>
+                <li><a href="{% url 'jackets-men' %}" class="orange" style="height: 10px;">Jackets & Coats</a></li>
+                <li><a href="" class="orange" style="height: 10px;">Jeans</a></li>
+                <li><a href="{% url 'loungewear-men' %}" class="orange" style="height: 10px;">Loungewear</a></li>
+                <li><a href="{% url 'polo-shirts-men' %}" class="orange" style="height: 10px;">Polo shirts</a></li>
+                <li><a href="" class="orange" style="height: 10px;">Shirts</a></li>
+                <li><a href="" class="orange" style="height: 10px;">Shoes</a></li>
+                <li><a href="" class="orange" style="height: 10px;">Shorts</a></li>
+                <li><a href="" class="orange" style="height: 10px;">Suits</a></li>
+                <li><a href="" class="orange" style="height: 10px;">Swimwear</a></li>
+                <li><a href="" class="orange" style="height: 10px;">T-shirts</a></li>
+                <li><a href="" class="orange" style="height: 10px;">Tracksuits</a></li>
+                <img src="{% static 'posts/image/mega-men-1.jpg' %}" alt="" class="dropdown-element">
+                <img src="{% static 'posts/image/mega-men-2.jpg' %}" alt="" class="dropdown-element2">
+                <h4 class="dropdown-element-text">Printed <br>T-shirts -20%</h4>
+                <a href="" class="orange dropdown-link">Shop now</a>
+                <h4 class="dropdown-element-text-2">Sneakers <br> -25%</h4>
+                <a href="" class="orange dropdown-link-2">Sneakers</a>
+            </ul>
+        </div>      
+        <span>|</span>
+        <div class="btn-group">
+        <a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2%;">      
+            Pages
+        </a> 
+        <ul class="dropdown-menu">
+            <h4></h4>
+            <li><a href="" class="orange"></a></li>
+            <li><a href="" class="orange">sdfsdaf</a></li>
+            <li><a href="" class="orange">sdfsdaf</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+        <a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2%;">      
+            Homes
+        </a> 
+        <ul class="dropdown-menu">
+            <h4></h4>
+            <li><a href="" class="orange"></a></li>
+            <li><a href="" class="orange">sdfsdaf</a></li>
+            <li><a href="" class="orange">sdfsdaf</a></li>
+            </ul>
+        </div>
     </div>
+
     <p class="otstup"></p>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="margin-top: -1%;">
         <div class="carousel-inner">
@@ -58,85 +107,92 @@
         </button>
     </div>
 
-    <div class="scale"><img src="{% static 'posts/image/banner-1.jpg' %}" alt="" class="scale" height="749"></div>
-    <div class="scale"><img src="{% static 'posts/image/banner-2.jpg' %}" alt="" class="scale" height="749"></div> 
+    <div class="scale"><img src="{% static 'posts/image/banner-1.jpg' %}" alt="" class="scale" height="832"></div>
+    <div class="scale"><img src="{% static 'posts/image/banner-2.jpg' %}" alt="" class="scale" height="832"></div> 
     
-    <img src="{% static 'posts/image/jeans.jpg' %}"  width="372"  class="img-text">
+    <img src="{% static 'posts/image/jeans.jpg' %}"  width="415"  class="img-text">
     <button type="button" class="btn-outline-orange">Jeans</button>
-    <img src="{% static 'posts/image/shoes.jpg' %}"  width="372" class="img-text">
+
+    <img src="{% static 'posts/image/shoes.jpg' %}"  width="415" class="img-text">
     <button type="button" class="btn-outline-orange2">Shoes</button>
-    <img src="{% static 'posts/image/coats.jpg' %}"  width="372" class="img-text">
+
+    <img src="{% static 'posts/image/coats.jpg' %}"  width="415" class="img-text">
     <button type="button" class="btn-outline-orange3">Coats & Jackets</button>
-    <img src="{% static 'posts/image/shirt.jpg' %}"  width="372" class="img-text">
+
+    <img src="{% static 'posts/image/shirt.jpg' %}"  width="415" class="img-text">
     <button type="button" class="btn-outline-orange4">Shirt</button>
-    <img src="{% static 'posts/image/accessories.jpg' %}"  width="372" class="img-text"> 
-    <button type="button" class="btn-outline-orange">Accessories</button>
-    <center><h1 class="center">New Arrivals</h1></center>
-    
+
+    <img src="{% static 'posts/image/accessories.jpg' %}"  width="415" class="img-text"> 
+    <button type="button" class="btn-outline-orange5">Accessories</button>
+       
 </main>
-<body>
-    <div class="owl-carousel owl-theme" style="margin-top: -3%;">
-        <div class="item">
-            <img src="{% static 'posts/image/ecosmart.jpg' %}" class="otstup" alt="">
-            <a href="" class="link">Cartier</a>
-            <h6 class="otstup">Ecosmart hooded sweatshirt</h6>
-            <h6>$144.90</h6>
-        </div>
-        <div class="item">
-            <img src="{% static 'posts/image/miva.jpg' %}" class="otstup" alt="">
-            <a href="" class="link">Miva Fachion</a>
-            <h6 class="otstup">Classic long sleeves shirt</h6>
-            <h6>$150.00</h6>
-        </div>
-        <div class="item">
-            <img src="{% static 'posts/image/christian.jpg' %}" class="otstup" alt="">
-            <a href="" class="link">Christian Louboutin</a>
-            <h6 class="otstup">Concrete Jungle Pack</h6>
-            <h6>$695.00 <del>$2,295.00</del></h6>
-        </div>
-        <div class="item">
-            <img src="{% static 'posts/image/oozine.jpg' %}" class="otstup" alt="">
-            <a href="" class="link">Oozio Style</a>
-            <h6 class="otstup">Lightweight water-resistant jacket</h6>
-            <h6>$69.75 <del>$90.65</del></h6>
-        </div>
-        <div class="item">
-            <img src="{% static 'posts/image/cartier.jpg' %}" class="otstup" alt="">
-            <a href="" class="link">Cartier</a>
-            <h6 class="otstup">Slim Fit Stretch Suit</h6>
-            <h6>$499.00</h6>
-        </div>
-        <div class="item">
-            <img src="{% static 'posts/image/zoodel.jpg' %}" class="otstup" alt="">
-            <a href="" class="link">Zoodel</a>
-            <h6 class="otstup">Future co-ord in lilac</h6>
-            <h6>$126.30 <del>$144.90</del></h6>
-        </div>    
+<center><h1 class="center">New Arrivals</h1></center>
+
+<div class="owl-carousel owl-theme" style="margin-top: -3%;">
+    <div class="item">
+        <img src="{% static 'posts/image/ecosmart.jpg' %}" class="otstup" alt="">
+        <a href="" class="link">Cartier</a>
+        <h6 class="otstup">Ecosmart hooded sweatshirt</h6>
+        <h6>$144.90</h6>
     </div>
+    <div class="item">
+        <img src="{% static 'posts/image/miva.jpg' %}" class="otstup" alt="">
+        <a href="" class="link">Miva Fachion</a>
+        <h6 class="otstup">Classic long sleeves shirt</h6>
+        <h6>$150.00</h6>
+    </div>
+    <div class="item">
+        <img src="{% static 'posts/image/christian.jpg' %}" class="otstup" alt="">
+        <a href="" class="link">Christian Louboutin</a>
+        <h6 class="otstup">Concrete Jungle Pack</h6>
+        <h6>$695.00 <del>$2,295.00</del></h6>
+    </div>
+    <div class="item">
+        <img src="{% static 'posts/image/oozine.jpg' %}" class="otstup" alt="">
+        <a href="" class="link">Oozio Style</a>
+        <h6 class="otstup">Lightweight water-resistant jacket</h6>
+        <h6>$69.75 <del>$90.65</del></h6>
+    </div>
+    <div class="item">
+        <img src="{% static 'posts/image/cartier.jpg' %}" class="otstup" alt="">
+        <a href="" class="link">Cartier</a>
+        <h6 class="otstup">Slim Fit Stretch Suit</415
+        <h6>$499.00</h6>
+    </div>
+    <div class="item">
+        <img src="{% static 'posts/image/zoodel.jpg' %}" class="otstup" alt="">
+        <a href="" class="link">Zoodel</a>
+        <h6 class="otstup">Future co-ord in lilac</h6>
+        <h6>$126.30 <del>$144.90</del></h6>
+    </div>    
+</div>
+<body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    autoplay: true,
-    dots:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:6
-        }
-    }
-})
-    </script>
-    <center><button type="button" class="btn btn-outline-dark" >Show all new arrivals</button></center>
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay: true,
+            dots:false,
+            responsive:{
+
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        })
+    </script> 
 </body>
+
+<center><button type="button" class="btn btn-outline-dark" >Show all new arrivals</button></center>
 
 <hr style="margin-bottom: 4%;">
 <center>  
@@ -150,7 +206,7 @@
     <h4 class="text-top3">Sporty elegance</h4>
 </center>
 
-<a href="" style="color: black; margin-left: 550px;">Discover more</a>
+<a href="" style="color: black; margin-left: 660px;">Discover more</a>
 <a href="" style="color: black; margin-left: 260px;">Shop now</a>
 <a href=""style="color: black; margin-left: 250px; ">New collection</a>
 
@@ -172,7 +228,7 @@
 
 <!-- иконки соц. сетей -->
 <center>
-    <div >  
+    <div>  
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="margin: 15px;">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
         </svg>
@@ -190,9 +246,9 @@
         </svg>
     </div>
     <div class="otstup">  
-        <a class="orange" href="#" style="margin: 10px;">Jackets & Coats</a>
-        <a class="orange" href="#" style="margin: 10px;">Loungewear</a>
-        <a class="orange" href="#" style="margin: 10px;">Polo shirts</a>
+        <a class="orange" href="{% url 'jackets-men' %}" style="margin: 10px;">Jackets & Coats</a>
+        <a class="orange" href="{% url 'loungewear-men' %}" style="margin: 10px;">Loungewear</a>
+        <a class="orange" href="{% url 'polo-shirts-men' %}" style="margin: 10px;">Polo shirts</a>
         <a class="orange" href="#" style="margin: 10px;">Shirts</a>
         <a class="orange" href="#" style="margin: 10px;">Shorts</a>
         <a class="orange" href="#" style="margin: 10px;">Suits</a>
@@ -270,21 +326,19 @@
 
 <img src="{% static 'posts/image/logo.png'%}" class="img-logo">
 
-<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >ENGLISH</a>
+<a class="nav-link dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ENGLISH</a>
 <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">FRANCAIS</a></li>
     <li><a class="dropdown-item" href="#">DEUTSCH</a></li>
 </ul>
-<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >USA</a>
+<a class="nav-link dropdown-toggle nav-link2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >USD</a>
 <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">USA</a></li>
+    <li><a class="dropdown-item" href="#">USD</a></li>
     <li><a class="dropdown-item" href="#">EURO</a></li>
 </ul>
 
-
-
 <center>
-    <p style="margin-top: 200px;">Copyright © 2021 miti. All Rights Reserved</p>
+    <p style="margin-top: 150px;">Copyright © 2021 miti. All Rights Reserved</p>
     <img src="{% static 'posts/image/payment.png'%}" alt="" style="margin-bottom: 50px;">
 </center>
 {% endblock %}

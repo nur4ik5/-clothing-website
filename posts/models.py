@@ -15,7 +15,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-	image = models.ImageField()
+	image = models.ImageField(upload_to = "product_image/", null=True)
 	brend = models.CharField(max_length=60, null=True)
 	title = models.CharField(max_length=100, null=True)
 	price = models.CharField(max_length=25, null=True)

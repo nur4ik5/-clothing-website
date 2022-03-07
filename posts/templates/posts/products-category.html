@@ -8,215 +8,213 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type = "text/javascript" href="{% static 'posts/css/lightslider.css' %}" ></script>  
-    <script type = "text/javascript" href="{% static 'posts/js/lightslider.js' %}"></script>
-     
-</head>
-<body>	
-	<p class="otstup"></p>
-    <div class="row row-cols-auto" >
-        <div class="col">
-        	<a href="{% url 'index' %}"><img src="{% static 'posts/image/logo.png'%}" width="100" align="left" hspace="60" align="left"></a>
-        </div>
-        <form class="box">
-            <input type="text" placeholder="Search for products" class="box">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" class = "search-icon" style = "margin-top: -4%; margin-left: 590px;">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-        </form>
-        <a class="orange" href="#" style="margin-top: 0.13%; margin-left: 10%;">Facebook</a>
-        <a class="orange" href="#" style="margin-top: 0.13%; ">Twitter</a>
-        <a class="orange" href="#" style="margin-top: 0.13%; ">Instagram</a>
-        <div class="col">
-            <a class="orange" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ENGLISH</a>
-            <ul class="dropdown-menu">
-                <h6></h6>
-                <li><a class="dropdown-item" href="#">FRANCAIS</a></li>
-                <li><a class="dropdown-item" href="#">DEUTSCH</a></li>
-            </ul>
-        </div>
-        <div class="col"> 
-                <a class="orange" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">USA</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">USA</a></li>
-                    <li><a class="dropdown-item" href="#">EURO</a></li>
-                </ul>
-        </div>
-        <!-- иконки -->
-        <nav class="nav">
-            <div class="col">
-                <a class="orange" href="#" class="effect" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="col">
-                <a class="orange" href="#" class="effect">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg>   
-                </a>
-            </div>
-            <div class="col">
-                <a class="orange" href="#" class="effect">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                  </svg>         
-                </a>
-            </div>  
-        </nav>
-    </div>
-		<div class="btn-group">
-		  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
-				Woman
-			</a> 
-		  	<ul class="dropdown-menu" >
-		  		<li><h6>Woman</h6></li>
-		  		<li><a href="" class="orange">Coats & Jackets</a></li>
-		  		<li><a href="" class="orange">Dresses </a></li>
-		  		<li><a href="" class="orange">Jeans</a></li>
-		  		<li><a href="" class="orange">Lingerie</a></li>
-		  		<li><a href="" class="orange">Loungewear </a></li>
-		  		<li><a href="" class="orange">Shirt</a></li>
-		  		<li><a href="" class="orange">Shoes</a></li>
-		  		<li><a href="" class="orange">Shorts</a></li>
-		  		<li><a href="" class="orange">Skirts</a></li>
-		  		<li><a href="" class="orange">Swimwear</a></li>
-		  		<li><a href="" class="orange">Top</a></li>
-		  		<li><a href="" class="orange">Trousers</a></li>
-
-		  		<div class="item img-element-1">
-		            <img src="{% static 'posts/image/036-600x798.jpg' %}" class="otstup " height="300px" alt="">
-		            <a href="" class="link">Oozio Style</a>
-		            <h6 class="otstup">Shirt short mini dresses </h6>
-		            <h6>$69.75</h6>
-		        </div>
-		        <div class="item img-element-2">
-		            <img src="{% static 'posts/image/002-600x798.jpg' %}" class="otstup " height="300px" alt="">
-		            <a href="" class="link">Oozio Style</a>		  
-		            <h6 class="otstup">Women’s long sleeve shirt</h6>
-		            <h6>$29.99 <del>$59.95</del></h6> 
-		        </div>
-		        <div class="item img-element-3">
-		            <img src="{% static 'posts/image/012-600x798.jpg' %}" class="otstup " height="300px" alt="">
-		            <a href="" class="link">Oozio Style</a>
-		            <h6 class="otstup">Women's summer wrap v neck dress </h6>
-		            <h6>$202.87</h6>
-		        </div>
-			</ul>
-				</div>
-		<div class="btn-group">
-		  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
-		    	Men
-		  	</a> 
-		  	<ul class="dropdown-menu">
-		  		<h6>Men</h6>
-		  		<li><a href="" class="orange" style="height: 10px;">Accessories</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Jackets & Coats</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Jeans</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Loungewear</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Polo shirts</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Shirts</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Shoes</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Shorts</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Suits</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Swimwear</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">T-shirts</a></li>
-		  		<li><a href="" class="orange" style="height: 10px;">Tracksuits</a></li>
-		  		<img src="{% static 'posts/image/mega-men-1.jpg' %}" alt="" class="dropdown-element">
-		  		<img src="{% static 'posts/image/mega-men-2.jpg' %}" alt="" class="dropdown-element2">
-		  		<h4 class="dropdown-element-text">Printed <br>T-shirts -20%</h4>
-		  		<a href="" class="orange dropdown-link">Shop now</a>
-		  		<h4 class="dropdown-element-text-2">Sneakers <br> -25%</h4>
-		  		<a href="" class="orange dropdown-link-2">Sneakers</a>
-	  		</ul>
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
-		    	Shoes
-		  	</a> 
-		  	<ul class="dropdown-menu">
-		  		<h4></h4>
-		  		<li><a href="" class="orange"></a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-	  		</ul>
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
-		    	Accessories
-		  	</a> 
-		  	<ul class="dropdown-menu">
-		  		<li>	
-		  			<img src="{% static 'posts/image/coats.jpg' %}" style="margin-right: 1000px; height: 100px;" alt="">
-		  		</li>
-		  		<li>	
-		  			<img src="{% static 'posts/image/coats.jpg' %}" style="margin-right: 1000px; height: 100px;" alt="">
-		  		</li>
-		  		<li>	
-		  			<img src="{% static 'posts/image/coats.jpg' %}" style="margin-right: 1000px; height: 100px;" alt="">
-		  		</li>
-		  		
-	  		</ul>
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange"  style="margin: 15px;">	  	
-		    	Shop
-		  	</a> 	
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
-		    	Categories
-		  	</a> 
-		  	<ul class="dropdown-menu">
-		  		<h4></h4>
-		  		<li><a href="" class="orange"></a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-	  		</ul>
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange"  style="margin: 15px;">	  	
-		    	Lookbook
-		  	</a> 	
-		</div>
-		<span style="color: #666666; margin-top: -5%;">|</span>
-		<div class="btn-group">
-		  	<a href="" class="orange"  style="margin: 15px;">Sale</a> 	
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange"  style="margin: 15px;">Blog</a> 	
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange"  style="margin: 15px;">Contact</a> 	
-		</div>
-		<span style="color: #666666; margin-top: -5%;">|</span>
-		<div class="btn-group">
-		  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
-		    	Pages
-		  	</a> 
-		  	<ul class="dropdown-menu">
-		  		<h4></h4>
-		  		<li><a href="" class="orange"></a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-	  		</ul>
-		</div>
-		<div class="btn-group">
-		  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
-		    	Homes
-		  	</a> 
-		  	<ul class="dropdown-menu">
-		  		<h4></h4>
-		  		<li><a href="" class="orange"></a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-		  		<li><a href="" class="orange">sdfsdaf</a></li>
-	  		</ul>
-		</div>
-    <hr style="margin-top: -0.4%;">
+    <script type = "text/javascript" href="{% static 'posts/js/lightslider.js' %}"></script>    
 </body>
+</head>	
+<p class="otstup"></p>
+<div class="row row-cols-auto" >
+    <div class="col">
+    	<a href="{% url 'index' %}"><img src="{% static 'posts/image/logo.png'%}" width="100" align="left" hspace="60" align="left"></a>
+    </div>
+    <form class="box">
+        <input type="text" placeholder="Search for products" class="box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" class = "search-icon" style = "margin-top: -4%; margin-left: 590px;">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </form>
+    <a class="orange" href="#" style="margin-top: -0.0%; ">Facebook</a>
+    <a class="orange" href="#" style="margin-top: -0.0%; ">Twitter</a>
+    <a class="orange" href="#" style="margin-top: -0.0%; ">Instagram</a>
+    <div class="col">
+        <a class="orange dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ENGLISH</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">FRANCAIS</a></li>
+            <li><a class="dropdown-item" href="#">DEUTSCH</a></li>
+        </ul>        
+    </div>
+    <div class="col"> 
+        <a class="orange dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="margin-right: 50px;">USD</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">EURO</a></li>
+        </ul>
+    </div>
+    <!-- иконки -->
+    <nav class="nav">
+        <div class="col">
+            <a class="orange" href="#" class="effect" style="margin: 13px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="col">
+            <a class="orange" href="#" class="effect"style="margin: 13px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg>   
+            </a>
+        </div>
+        <div class="col">
+            <a class="orange" href="#" class="effect"style="margin: 13px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>         
+            </a>
+        </div>  
+    </nav>
+</div>
+<div class="btn-group">
+  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px; margin-left: 58px;">	  	
+		Women
+	</a> 
+  	<ul class="dropdown-menu" >
+  		<li><h6>Women</h6></li>
+  		<li><a href="" class="orange">Coats & Jackets</a></li>
+  		<li><a href="" class="orange">Dresses </a></li>
+  		<li><a href="" class="orange">Jeans</a></li>
+  		<li><a href="" class="orange">Lingerie</a></li>
+  		<li><a href="" class="orange">Loungewear </a></li>
+  		<li><a href="" class="orange">Shirt</a></li>
+  		<li><a href="" class="orange">Shoes</a></li>
+  		<li><a href="" class="orange">Shorts</a></li>
+  		<li><a href="" class="orange">Skirts</a></li>
+  		<li><a href="" class="orange">Swimwear</a></li>
+  		<li><a href="" class="orange">Top</a></li>
+  		<li><a href="" class="orange">Trousers</a></li>
+
+  		<div class="item img-element-1">
+            <img src="{% static 'posts/image/036-600x798.jpg' %}" class="otstup " height="300px" alt="">
+            <a href="" class="link">Oozio Style</a>
+            <h6 class="otstup">Shirt short mini dresses </h6>
+            <h6>$69.75</h6>
+        </div>
+        <div class="item img-element-2">
+            <img src="{% static 'posts/image/002-600x798.jpg' %}" class="otstup " height="300px" alt="">
+            <a href="" class="link">Oozio Style</a>		  
+            <h6 class="otstup">Women’s long sleeve shirt</h6>
+            <h6>$29.99 <del>$59.95</del></h6> 
+        </div>
+        <div class="item img-element-3">
+            <img src="{% static 'posts/image/012-600x798.jpg' %}" class="otstup " height="300px" alt="">
+            <a href="" class="link">Oozio Style</a>
+            <h6 class="otstup">Women's summer wrap v neck dress </h6>
+            <h6>$202.87</h6>
+        </div>
+	</ul>
+</div>
+<div class="btn-group">
+  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
+    	Men
+  	</a> 
+  	<ul class="dropdown-menu">
+  		<h6>Men</h6>
+  		<li><a href="" class="orange" style="height: 10px;">Accessories</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Jackets & Coats</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Jeans</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Loungewear</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Polo shirts</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Shirts</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Shoes</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Shorts</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Suits</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Swimwear</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">T-shirts</a></li>
+  		<li><a href="" class="orange" style="height: 10px;">Tracksuits</a></li>
+  		<img src="{% static 'posts/image/mega-men-1.jpg' %}" alt="" class="dropdown-element">
+  		<img src="{% static 'posts/image/mega-men-2.jpg' %}" alt="" class="dropdown-element2">
+  		<h4 class="dropdown-element-text">Printed <br>T-shirts -20%</h4>
+  		<a href="" class="orange dropdown-link">Shop now</a>
+  		<h4 class="dropdown-element-text-2">Sneakers <br> -25%</h4>
+  		<a href="" class="orange dropdown-link-2">Sneakers</a>
+		</ul>
+</div>
+<div class="btn-group">
+  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
+    	Shoes
+  	</a> 
+  	<ul class="dropdown-menu">
+  		<h4></h4>
+  		<li><a href="" class="orange"></a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+		</ul>
+</div>
+<div class="btn-group">
+  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
+    	Accessories
+  	</a> 
+  	<ul class="dropdown-menu">
+  		<li>	
+  			<img src="{% static 'posts/image/coats.jpg' %}" style="margin-right: 1000px; height: 100px;" alt="">
+  		</li>
+  		<li>	
+  			<img src="{% static 'posts/image/coats.jpg' %}" style="margin-right: 1000px; height: 100px;" alt="">
+  		</li>
+  		<li>	
+  			<img src="{% static 'posts/image/coats.jpg' %}" style="margin-right: 1000px; height: 100px;" alt="">
+  		</li>
+  		
+	</ul>
+</div>
+<div class="btn-group">
+  	<a href="" class="orange"  style="margin: 15px;">	  	
+    	Shop
+  	</a> 	
+</div>
+<div class="btn-group">
+  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
+    	Categories
+  	</a> 
+  	<ul class="dropdown-menu">
+  		<h4></h4>
+  		<li><a href="" class="orange"></a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+	</ul>
+</div>
+<div class="btn-group">
+  	<a href="" class="orange"  style="margin: 15px;">	  	
+    	Lookbook
+  	</a> 	
+</div>
+<span style="color: #666666; margin-top: -5%;">|</span>
+<div class="btn-group">
+  	<a href="" class="orange"  style="margin: 15px;">Sale</a> 	
+</div>
+<div class="btn-group">
+  	<a href="" class="orange"  style="margin: 15px;">Blog</a> 	
+</div>
+<div class="btn-group">
+  	<a href="" class="orange"  style="margin: 15px;">Contact</a> 	
+</div>
+<span style="color: #666666; margin-top: -5%;">|</span>
+<div class="btn-group">
+  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
+    	Pages
+  	</a> 
+  	<ul class="dropdown-menu">
+  		<h4></h4>
+  		<li><a href="" class="orange"></a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+	</ul>
+</div>
+<div class="btn-group">
+  	<a href="" class="orange  dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" style="margin: 15px;">	  	
+    	Homes
+  	</a> 
+  	<ul class="dropdown-menu">
+  		<h4></h4>
+  		<li><a href="" class="orange"></a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+  		<li><a href="" class="orange">sdfsdaf</a></li>
+	</ul>
+</div>
+<hr style="margin-top: -0.4%;">
 
 
 {% block content %}
