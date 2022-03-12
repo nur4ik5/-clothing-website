@@ -1,4 +1,4 @@
-{% extends "posts/base.html" %}
+{% extends "base.html" %}
 {% load static %}
 {% block content %}
 <main>
@@ -106,26 +106,33 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <div style="margin-top: -0.8%;">     
+        <div class="scale"><img src="{% static 'posts/image/banner-1.jpg' %}" alt="" class="scale" height="832"></div>
+        <div class="scale"><img src="{% static 'posts/image/banner-2.jpg' %}" alt="" class="scale" height="832"></div> 
+        <h1 class="title-form1">Looking <br>for new <br>shoes?</h1>
+        <a href="" class="title-form1">Sneakers on sale</a>
+        <h1 class="title-form2">Be ready <br> for Summer <br> 2021</h1>
+        <a href=""class="title-form2">Upcoming trends</a>
+    </div>
 
-    <div class="scale"><img src="{% static 'posts/image/banner-1.jpg' %}" alt="" class="scale" height="832"></div>
-    <div class="scale"><img src="{% static 'posts/image/banner-2.jpg' %}" alt="" class="scale" height="832"></div> 
-    
-    <img src="{% static 'posts/image/jeans.jpg' %}"  width="415"  class="img-text">
-    <button type="button" class="btn-outline-orange">Jeans</button>
+    <div style="margin-top: 2.3%;">        
+        <img src="{% static 'posts/image/jeans.jpg' %}"  width="415"  class="img-text">
+        <button type="button" class="btn-outline-orange">Jeans</button>
 
-    <img src="{% static 'posts/image/shoes.jpg' %}"  width="415" class="img-text">
-    <button type="button" class="btn-outline-orange2">Shoes</button>
+        <img src="{% static 'posts/image/shoes.jpg' %}"  width="415" class="img-text">
+        <button type="button" class="btn-outline-orange2">Shoes</button>
 
-    <img src="{% static 'posts/image/coats.jpg' %}"  width="415" class="img-text">
-    <button type="button" class="btn-outline-orange3">Coats & Jackets</button>
+        <img src="{% static 'posts/image/coats.jpg' %}"  width="415" class="img-text">
+        <button type="button" class="btn-outline-orange3">Coats & Jackets</button>
 
-    <img src="{% static 'posts/image/shirt.jpg' %}"  width="415" class="img-text">
-    <button type="button" class="btn-outline-orange4">Shirt</button>
+        <img src="{% static 'posts/image/shirt.jpg' %}"  width="415" class="img-text">
+        <button type="button" class="btn-outline-orange4">Shirt</button>
 
-    <img src="{% static 'posts/image/accessories.jpg' %}"  width="415" class="img-text"> 
-    <button type="button" class="btn-outline-orange5">Accessories</button>
-       
+        <img src="{% static 'posts/image/accessories.jpg' %}"  width="415" class="img-text"> 
+        <button type="button" class="btn-outline-orange5">Accessories</button>
+    </div>    
 </main>
+
 <center><h1 class="center">New Arrivals</h1></center>
 
 <div class="owl-carousel owl-theme" style="margin-top: -3%;">

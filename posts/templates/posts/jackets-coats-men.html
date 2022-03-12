@@ -9,12 +9,20 @@
       	</ol>
     </nav>
     <h1>Jackets & Coats</h1>
-    	{% for p in products %}
-        <img src=" {{p.image.url}} " class="otstup" height="350px" alt="">
-        <a href="" class="link">{{p.brend}}</a>
-        <h6 class="otstup">{{p.title}}</h6>
-        <h6>{{p.price}}</h6>
-        {% endfor %}
+</div>
+<div class ="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div>        
+            	{% for p in products %}
+                <img src=" {{p.image.url}} " class="otstup" height="350px" alt="">
+                <!-- <a href="" class="link">{{p.brend}}</a>
+                <h6 class="otstup">{{p.title}}</h6>
+                <h6>{{p.price}}</h6>
+ -->                {% endfor %}
+            </div>
+        </div>
+    </div>
 </div>
 
 <center>

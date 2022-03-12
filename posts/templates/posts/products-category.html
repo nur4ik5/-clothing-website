@@ -14,6 +14,11 @@
     <script type = "text/javascript" href="{% static 'posts/js/lightslider.js' %}"></script>    
 </body>
 </head>	
+<div class="alert alert-dismissible fade show" role="alert">
+    <center style = "color: white;">-5% for all order in this week <strong>Shop Now</strong> | Free delivery for all orders over $200</center>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
 <p class="otstup"></p>
 <div class="row row-cols-auto" >
     <div class="col">
@@ -189,7 +194,7 @@
   	<a href="" class="orange"  style="margin: 15px;">Blog</a> 	
 </div>
 <div class="btn-group">
-  	<a href="" class="orange"  style="margin: 15px;">Contact</a> 	
+  	<a href="{% url 'contact' %}" class="orange"  style="margin: 15px;">Contact</a> 	
 </div>
 <span style="color: #666666; margin-top: -5%;">|</span>
 <div class="btn-group">

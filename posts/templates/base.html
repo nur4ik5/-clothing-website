@@ -28,9 +28,9 @@
     <div class="col" >
         <a href="{% url 'index' %}"><img src="{% static 'posts/image/logo.png'%}" width="100" align="left" hspace="60" align="left"></a>
     </div>
-    <div class="col" class="effect" ><a class="orange" aria-current="page" href="{% url 'index' %}"><h5>Men</h5></a></div>
-    <div class="col" class="effect" ><a class="orange" href="{% url 'woman' %}"><h5>Women</h5></a></div>
-    <div class="col" class="effect" ><a class="orange" href="{% url 'shoes' %}"><h5>Shoes</h5></a></div>
+    <div class="col effect" ><a class="orange " aria-current="page" href="{% url 'index' %}"><h5>Men</h5></a></div>
+    <div class="col effect" ><a class="orange " href="{% url 'women' %}"><h5>Women</h5></a></div>
+    <div class="col effect" ><a class="orange " href="{% url 'shoes' %}"><h5>Shoes</h5></a></div>
     <form class="box">
         <input type="text" placeholder="Search for products" class="box">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" class = "search-icon" style = "margin-top: -10%; margin-left: 590px;">
@@ -38,7 +38,7 @@
         </svg>
     </form>
     <a class="orange" href="#">Blog</a>
-    <a class="orange" href="#">Contact</a>
+    <a class="orange" href="{% url 'contact' %}">Contact</a>
     <div class="col">
         <a class="orange dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ENGLISH</a>
         <ul class="dropdown-menu">

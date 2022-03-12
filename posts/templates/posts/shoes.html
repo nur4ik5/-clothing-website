@@ -1,4 +1,4 @@
-{% extends "posts/base.html" %}
+{% extends "base.html" %}
 {% load static %}
 {% block content %}
 <main>
@@ -25,41 +25,43 @@
         <img src="{% static 'posts/image/slider-shoes-layer1-1.jpg' %}" alt="" height="1095px">
         <img src="{% static 'posts/image/slider-shoes-layer2-1.jpg' %}" alt="" height="1095px">
         <h1 class="element-font">Shoes <br> for her</h1>
-        <h1 class="element-font2">Shoes for him</h1>
+        <button class="btn-element-font">Women</button>
+        <button class="btn-element-font2">Unisex</button>
+        <h1 class="element-font2">Shoes <br> for him</h1>
+        <button class="btn-element-font3">Men</button>
+        <button class="btn-element-font4">Unisex</button>
     </div>
-    <div style="margin-top: 10.3%;">
+    <div style="margin-top: 8%;">
         <img src="{% static 'posts/image/red-fon.png' %}" alt="" width="2105px" height="400px" >
         <img src="{% static 'posts/image/christmas-1.jpg' %}" alt="" style="margin-top: -330px;">
         <img src="{% static 'posts/image/christmas-2.jpg' %}" alt="" style="margin-top: -530px; margin-left: 1668px;">
 
         <center class = "elementor-text">
-            <h1>Christmas Sales -50%</h1>
-            <p>Use code “shoesshoesshoes” in cart to check the discount.</p>
+            <h1 style="font-size: 80px;">Christmas Sales -50%</h1>
+            <p style="font-size: 20px;">Use code “shoesshoesshoes” in cart to check the discount.</p>
             <button class="elementor-button-text">Sneakers</button>
             <button class="elementor-button-text">Boots</button>
             <button class="elementor-button-text">Sports shoes</button>
             <button class="elementor-button-text">Outdoor shoes</button>
         </center>
     </div>
-    <div style="margin-top: 1%;">
-        <center>
-            <img src="{% static 'posts/image/footwear-sneakers.png' %}" alt="" style="margin: 115px;">
-            <img src="{% static 'posts/image/footwear-boots.png' %}" alt="" style="margin: 115px;">
-            <img src="{% static 'posts/image/footwear-flip-flops.png' %}" alt="" style="margin: 115px;">
-            <img src="{% static 'posts/image/footwear-heels.png' %}" alt="" style="margin: 115px;">
-            <img src="{% static 'posts/image/footwear-sport.png' %}" alt="" style="margin: 115px;">
-            <img src="{% static 'posts/image/footwear-boots-female.png' %}" alt="" style="margin: 115px;">
-            <button class="elementor-button-obuv">89087</button>
-            <button class="elementor-button-obuv">89078</button>
-            <button class="elementor-button-obuv">67565</button>
-            <button class="elementor-button-obuv">12345</button>
-            <button class="elementor-button-obuv">34567</button>
-            <button class="elementor-button-obuv">67890</button>
-        </center>
+    <div style="margin-top: 8%;">
+        <img src="{% static 'posts/image/footwear-sneakers.png' %}" alt="" style="margin: 0 20px 0 145px;">
+        <img src="{% static 'posts/image/footwear-boots.png' %}" alt="" style="margin: 0  20px 0 250px;">
+        <img src="{% static 'posts/image/footwear-flip-flops.png' %}" alt="" style="margin: 0  20px 0 250px;">
+        <img src="{% static 'posts/image/footwear-heels.png' %}" alt="" style="margin: 0 20px 0 250px;">
+        <img src="{% static 'posts/image/footwear-sport.png' %}" alt="" style="margin: 0  20px 0 250px;">
+        <img src="{% static 'posts/image/footwear-boots-female.png' %}" alt="" style="margin: 0  20px 0 250px;">
     </div>
+        <button class="elementor-button-obuv">Sneakers</button>
+        <button class="elementor-button-obuv">Boots</button>
+        <button class="elementor-button-obuv">Flip-flops</button>
+        <button class="elementor-button-obuv">Heels</button>
+        <button class="elementor-button-obuv">Sports</button>
+        <button class="elementor-button-obuv">Rainproof</button>
 </main>
 <center><h1>New Arrivals</h1></center>
-<div class="owl-carousel owl-theme" style="margin-top: -3%;">
+<div class="owl-carousel owl-theme" style="margin-top: -7%;">
     <div class="item">
         <img src="{% static 'posts/image/010-600x798.jpg' %}" class="otstup" alt="">
         <a href="" class="link">Barberry</a>
@@ -123,8 +125,8 @@
 </body>
 <center><button type="button" class="btn btn-outline-dark" >Show all new arrivals</button></center>
 <!-- Оповещение -->
-<div class="alert alert-danger" role="alert">
-  A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+<div class="alert alert-dismissible fade show" role="alert">
+    <center style = "color: white;">-5% for all order in this week <strong>Shop Now</strong> | Free delivery for all orders over $200</center>
 </div>
 
 <!-- Вторая карусель -->
